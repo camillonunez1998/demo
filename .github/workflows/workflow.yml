@@ -68,7 +68,7 @@ jobs:
       
       - name: Install dependencies
         run: |
-            wget -q https://github.com/github/codeql-cli-binaries/releases/download/v2.12.3/codeql-linux64.zip
+            wget -q https://github.com/github/codeql-cli-binaries/releases/latest/download/codeql-linux64.zip
             unzip codeql-linux64.zip
               
       - name: CodeQL for js  
