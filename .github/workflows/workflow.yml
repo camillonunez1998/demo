@@ -99,6 +99,9 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: react-github-actions-build-15.x
+
+      ##Parte de mi debug
+      - name: Debug List directory contents
         run: ls -lR ; pwd
           
       # Set the credentials from repository settings/secrets
@@ -109,7 +112,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: 'eu-north-1'
 
-      #Parte de mi debug
+      ##Parte de mi debug
       - name: Debug List directory contents
         run: ls -lR ; pwd
           
