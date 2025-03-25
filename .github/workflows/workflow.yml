@@ -107,6 +107,10 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: 'eu-north-1'
+
+      #Parte de mi depuracion
+      - name: Debug: List directory contents
+        run: ls -l /home/runner/work/oeww/demo/
           
       # Copy the files from build folder to the S3 bucket
       - name: Deploy to S3
