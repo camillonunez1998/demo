@@ -44,7 +44,7 @@ jobs:
         
       # Upload a build artifcat that can be used by subsequent workflow steps
       - name: Share artifact inside workflow
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: react-github-actions-build
           path: build
