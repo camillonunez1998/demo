@@ -114,5 +114,5 @@ jobs:
           
       # Copy the files from build folder to the S3 bucket
       - name: Deploy to S3
-        run: aws s3 sync . s3://github-action-demo-gdsc --acl public-read
-        working-directory: react-github-actions-build-15.x
+        run: aws s3 sync ./react-github-actions-build-15.x s3://github-action-demo-gosc --acl public-read
+#        working-directory: react-github-actions-build-15.x
