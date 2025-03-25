@@ -109,7 +109,7 @@ jobs:
           aws-region: 'eu-north-1'
 
       #Parte de mi depuracion
-      - name: Debug: List directory contents
+      - name: List directory contents
         run: ls -l /home/runner/work/oeww/demo/
           
       # Copy the files from build folder to the S3 bucket
