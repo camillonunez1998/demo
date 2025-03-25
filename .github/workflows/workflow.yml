@@ -110,7 +110,7 @@ jobs:
 
       #Parte de mi debug
       - name: Debug List directory contents
-        run: ls -lR
+        run: ls -lR ; pwd
           
       # Copy the files from build folder to the S3 bucket
       - name: Deploy to S3
