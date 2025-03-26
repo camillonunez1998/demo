@@ -100,7 +100,7 @@ jobs:
     
       # Download previously shared build
       - name: Get artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v3
         with:
           name: react-github-actions-build-15.x
 
